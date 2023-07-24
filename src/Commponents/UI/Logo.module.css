@@ -1,0 +1,22 @@
+.logo-content {
+    display: flex;
+    position: relative;
+    margin: 20px 0px -20px 1%;
+}
+
+.logo-content h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    padding: 2px 2px 2px 5px;
+    bottom: -20px;
+    left: 54px;
+    background-color: yellow;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.avatar {
+    width: 65px;
+    height: 65px;
+    z-index: 2;
+}

@@ -1,0 +1,39 @@
+.content-about__us {
+    margin-top: 14%;
+    display: flex;
+    gap: 5%;
+    animation: slide-up 1.5s ease-in-out;
+}
+
+.section {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section p {
+    width: 700px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.avatar {
+    margin-top: -180px;
+    margin-bottom: 150px;
+    margin-left: 15px;
+    width: 450px;
+    height: 450px;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

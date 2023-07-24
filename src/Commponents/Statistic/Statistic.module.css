@@ -1,0 +1,74 @@
+.content {
+    animation: slide-down 1.5s ease-in-out;
+    width: max-content;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 23%;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(125, 242, 255);
+    border-radius: 15px;
+}
+
+.card {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 9px;
+    background-color: rgb(226, 249, 255);
+    border-radius: 15px;
+    display: flex;
+    width: 750px;
+    margin: 3% auto;
+    padding: 5px 55px 0px 55px;
+    justify-content: space-around;
+}
+
+.cardForInfo {
+    background-color: rgba(243, 250, 45, 0.399);
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 750px;
+    padding: 5px 55px 5px 55px;
+}
+
+.card h1:nth-child(1) {
+    margin-right: 75px;
+}
+
+.card h1:nth-child(2) {
+    margin-right: -70px;
+}
+
+.card h1:nth-child(3) {
+    font-size: 13px;
+    margin-top: 2.2%;
+    color: rgb(72, 0, 255);
+}
+
+.custom-loader {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: conic-gradient(#0000 10%, #766DF4);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+    animation: s3 1s infinite linear;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes s3 {
+    to {
+        transform: rotate(1turn)
+    }
+}
