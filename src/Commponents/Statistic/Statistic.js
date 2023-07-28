@@ -3,26 +3,6 @@ import { currenciesSliceActions } from "../../Store/currencies-slice"
 import { Fragment, useEffect, useState } from "react"
 import styles from './Statistic.module.css'
 
-
-const filteredSupply1 = (supply) => {
-    const supplyToArr = supply.toString().slice(1,).split('')
-    if (supplyToArr.length >= 6 && supplyToArr.length < 9) {
-        switch (supplyToArr.length) {
-            case 6: return supply.toString().slice(0, 1) + '.' + supply.toString().slice(2, 4) + 'M';
-            case 7: return supply.toString().slice(0, 2) + '.' + supply.toString().slice(3, 5) + 'M';
-            case 8: return supply.toString().slice(0, 3) + '.' + supply.toString().slice(4, 6) + 'M';
-            default: return supplyToArr
-        }
-    }
-    if (supplyToArr.length >= 9 && supplyToArr.length <= 11) {
-        switch (supplyToArr.length) {
-            case 9: return supply.toString().slice(0, 1) + '.' + supply.toString().slice(2, 4) + 'B';
-            case 10: return supply.toString().slice(0, 2) + '.' + supply.toString().slice(3, 5) + 'B';
-            case 11: return supply.toString().slice(0, 3) + '.' + supply.toString().slice(4, 6) + 'B';
-            default: return supplyToArr
-        }
-    }
-}
 const filteredSupply = (supply) => {
     const supplyToArr = supply.toString().slice(1,).split('')
     switch (supplyToArr.length) {
