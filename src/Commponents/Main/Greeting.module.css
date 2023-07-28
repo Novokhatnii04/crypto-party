@@ -9,6 +9,7 @@
     display: flex;
 }
 
+
 .avatar {
     overflow: hidden;
     animation: slide-down 2.0s ease-in-out;

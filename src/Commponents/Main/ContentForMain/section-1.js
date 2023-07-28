@@ -1,7 +1,6 @@
 import casePhoto1 from '../../../Assets/cases-img-1.png'
 import styles from './section-1.module.css'
-
-
+// import Image from 'next/image'
 
 const SectionOne = () => {
     return <div className={styles['content-about__us']} >
@@ -14,6 +13,7 @@ const SectionOne = () => {
                 assumenda consequuntur modi alias ipsa!
             </p>
         </div>
+        {/* <Image src={casePhoto1} className={styles.avatar} placeholder='blur'></Image> */}
         <img src={casePhoto1} className={styles.avatar} placeholder='blur' />
     </div >
 }
