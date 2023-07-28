@@ -2,6 +2,7 @@ import casePhoto1 from '../../../Assets/cases-img-1.png'
 import styles from './section-1.module.css'
 
 
+
 const SectionOne = () => {
     return <div className={styles['content-about__us']} >
         <div className={styles.section}>
@@ -13,7 +14,7 @@ const SectionOne = () => {
                 assumenda consequuntur modi alias ipsa!
             </p>
         </div>
-        <img src={casePhoto1} className={styles.avatar}></img>
+        <img src={casePhoto1} className={styles.avatar} placeholder='blur' />
     </div >
 }
 
