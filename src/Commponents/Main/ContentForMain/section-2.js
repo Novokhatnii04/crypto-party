@@ -1,11 +1,10 @@
 import casePhoto2 from '../../../Assets/cases-img-2.png'
 import styles from './section-2.module.css'
 
-
 const SectionTwo = () => {
     return <div className={styles['content-about__us']}>
         <div className={styles.section}>
-            <img src={casePhoto2} className={styles.avatar}></img>
+            <img src={casePhoto2} className={styles.avatar} placeholder='blur' />
             <div>
                 <h1>Криптовалюта це - 'Мильний пузир' ?</h1>
                 <p>

@@ -1,49 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .section {
-    position: fixed;
-    top: 0%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 250px;
-    padding: 15px 0px 15px 15px;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    border-right: 1px solid rgb(209, 245, 255);
+  position: fixed;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 250px;
+  padding: 15px 0px 15px 15px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-right: 1px solid rgb(209, 245, 255);
 }
 
 .active {
-    color: rgb(8, 175, 235);
-    text-decoration: none;
+  color: rgb(8, 175, 235);
+  text-decoration: none;
 }
 
 .unactive {
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .lists {
-    margin-top: 70px;
-    text-decoration: none;
+  margin-top: 70px;
+  text-decoration: none;
 }
 
 .lists li {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
-    list-style: none;
-    transition: font-size 0.3s ease;
-    width: max-content;
-    font-weight: 600;
-    margin-bottom: 70px;
-    margin-top: 25px;
-    margin-left: 0%;
-    text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  list-style: none;
+  -webkit-transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 600;
+  margin-bottom: 70px;
+  margin-top: 25px;
+  margin-left: 0%;
+  text-decoration: none;
 }
 
 .lists li:hover {
-    font-size: 150%;
+  font-size: 150%;
+}
+
+.lists li:visited {
+  color: black;
+  text-decoration: none;
 }
